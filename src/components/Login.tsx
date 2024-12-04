@@ -21,16 +21,20 @@ const Login: React.FC<LoginComponentProps> = ({ backgroundImageUrl }) => {
         </div>
         <div className="login-content">
           <h2 className="login-title">Nombre del sitio web</h2>
-          <p>
+          <p>Titulo</p>
+          <p className="login-text">
             Inicia sesión en tu cuenta para acceder a todos los beneficios de
             nuestra plataforma.
           </p>
-          <GoogleButton />
+          <div className="login-google">
+            <GoogleButton />
+          </div>
         </div>
+        <hr className="divider" />
         <div className="login-footer">
           <h4>¿Problemas para acceder?</h4>
-          <p className="access-problems">informa al siguiente correo /n aaaa</p>
-          <p className="access-problems2">informa al siguiente correo</p>
+          <p className="access-problems">informa al siguiente correo</p>
+          <p className="access-problems2">ejemplo@unal.edu.co</p>
         </div>
       </div>
     </div>
