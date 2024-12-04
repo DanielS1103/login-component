@@ -1,17 +1,14 @@
-import React from "react";
-import "./styles.css";
+import './styles.css';
+
+import React from 'react';
+
+import GoogleButton from './google/GoogleButton';
 
 interface LoginComponentProps {
   backgroundImageUrl: string;
-  googleLogoUrl: string;
-  onGoogleLogin?: () => void;
 }
 
-const Login: React.FC<LoginComponentProps> = ({
-  backgroundImageUrl,
-  googleLogoUrl,
-  onGoogleLogin,
-}) => {
+const Login: React.FC<LoginComponentProps> = ({ backgroundImageUrl }) => {
   return (
     <div className="login-container">
       <div className="login-card">
@@ -22,27 +19,18 @@ const Login: React.FC<LoginComponentProps> = ({
             className="login-image"
           />
         </div>
-
         <div className="login-content">
-          <h2 className="login-title">Acceder</h2>
+          <h2 className="login-title">Nombre del sitio web</h2>
           <p>
             Inicia sesión en tu cuenta para acceder a todos los beneficios de
             nuestra plataforma.
           </p>
-          <button className="google-login-button" onClick={onGoogleLogin}>
-            <img
-              src={googleLogoUrl}
-              alt="Google icon"
-              className="google-icon"
-              width={24}
-              height={24}
-            />
-            Iniciar sesión con Google
-          </button>
+          <GoogleButton />
         </div>
-
         <div className="login-footer">
-          <p className="access-problems">¿Problemas para acceder?</p>
+          <h4>¿Problemas para acceder?</h4>
+          <p className="access-problems">informa al siguiente correo /n aaaa</p>
+          <p className="access-problems2">informa al siguiente correo</p>
         </div>
       </div>
     </div>
