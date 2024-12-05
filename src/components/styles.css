@@ -6,9 +6,9 @@
 }
 
 .login-card {
-  width: 350px;
-  height: 500px;
-  border-radius: 12px;
+  width: 452px;
+  height: 615px;
+  border-radius: 20px 40px 20px 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -31,40 +31,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2px;
+  padding: 3px;
   flex-grow: 1;
 }
 
 .login-title {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 0px;
+  margin-left: 30px;
   color: #333;
-  align-self: center;
+  align-self: flex-start;
+}
+
+.login-subtitle {
+  font-size: 20px;
+  margin-top: 0px;
+  padding-left: 30px;
+  color: #332f2f;
+  align-self: flex-start;
 }
 
 .login-text {
   font-size: 14px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .login-google {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  text-align: center;
+  margin-top: auto;
+  padding: 0px 0;
+  position: relative;
+  bottom: 5px;
+  top: 30px;
+  border: 1px solid rgb(55, 53, 53);
+  border-radius: 5px;
 }
 
 .divider {
-  width: 100%;
+  width: 85%;
   height: 1px;
-  background-color: #000000;
-  margin: 15px 0; /* Ajusta este valor según sea necesario */
+  background-color: #a2a3a4;
+  margin: 50px auto;
 }
 
 .login-footer {
   text-align: center;
-  background-color: #f9f9f9;
   margin-top: auto;
   padding: 0px 0;
   position: relative;
-  bottom: 25px;
+  bottom: 50px;
 }
 
 .access-problems {
@@ -74,9 +90,10 @@
 }
 
 .access-problems2 {
-  color: #109205;
+  color: #677d29;
   font-size: 14px;
   margin: 0px 0;
+  font-weight: bold;
 }
 
 .login-content p {
