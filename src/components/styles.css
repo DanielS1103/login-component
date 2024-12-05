@@ -44,7 +44,7 @@
 }
 
 .login-subtitle {
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 0px;
   padding-left: 30px;
   color: #332f2f;
@@ -52,7 +52,7 @@
 }
 
 .login-text {
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   padding-left: 30px;
 }
@@ -63,7 +63,7 @@
   padding: 0px 0;
   position: relative;
   bottom: 5px;
-  top: 30px;
+  top: 25px;
   border: 1px solid rgb(55, 53, 53);
   border-radius: 5px;
 }
