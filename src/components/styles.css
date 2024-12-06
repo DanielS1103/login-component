@@ -83,7 +83,7 @@
     4px 0 8px rgba(0, 0, 0, 0.15), -4px 0 8px rgba(0, 0, 0, 0.15);
   border-color: rgb(55, 53, 53);
 }
-google-login-button:active {
+.google-login-button:active {
   background-color: rgb(242, 253, 221);
 }
 
