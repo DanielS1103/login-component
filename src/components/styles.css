@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .login-card {
   width: 452px;
-  height: 615px;
+  height: 100%;
   border-radius: 20px 40px 20px 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -74,8 +74,7 @@
   border: 2px rgb(55, 53, 53) solid;
   border-radius: 8px 12px 8px 12px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  height: 80%;
+  height: 45px;
 }
 
 .google-login-button:hover {
@@ -101,7 +100,7 @@
   width: 85%;
   height: 1px;
   background-color: #a2a3a4;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 
 .login-footer {
