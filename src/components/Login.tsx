@@ -1,15 +1,16 @@
-import "./styles.css";
+import './styles.css';
 
-import React from "react";
+import React from 'react';
 
-import image from "../assets/image.png";
-import GoogleButton from "./google/GoogleButton";
+import google from '../assets/google.png';
+import image from '../assets/image.png';
 
 interface LoginConfig {
   siteName: string;
   siteSubtitle: string;
   loginInstructions: string;
   contactEmail: string;
+  onGoogleLogin?: () => void;
 }
 
 const Login = ({
@@ -17,6 +18,7 @@ const Login = ({
   siteSubtitle = "CMS - Gestor de contenidos",
   loginInstructions = "Accede con tu correo institucional @unal.edu.co, serás redirigido para validar tu identidad.",
   contactEmail = "XXXXXXXX@unal.edu.co",
+  onGoogleLogin,
 }: LoginConfig) => {
   return (
     <div className="login-container">
@@ -29,7 +31,15 @@ const Login = ({
           <p className="login-subtitle">{siteSubtitle}</p>
           <p className="login-text">{loginInstructions}</p>
           <div className="login-google">
-            <GoogleButton />
+            <button className="google-login-button" onClick={onGoogleLogin}>
+              <img
+                src={google}
+                className="google-icon"
+                width={24}
+                height={24}
+              />
+              <p className="google-text">ACCEDER CON GOOGLE</p>
+            </button>
           </div>
         </div>
         <hr className="divider" />

@@ -64,15 +64,44 @@
   position: relative;
   bottom: 5px;
   top: 25px;
-  border: 1px solid rgb(55, 53, 53);
   border-radius: 5px;
+}
+
+.google-login-button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 2px rgb(55, 53, 53) solid;
+  border-radius: 8px 12px 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 80%;
+}
+
+.google-login-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 -4px 8px rgba(0, 0, 0, 0.15),
+    4px 0 8px rgba(0, 0, 0, 0.15), -4px 0 8px rgba(0, 0, 0, 0.15);
+  border-color: rgb(55, 53, 53);
+}
+google-login-button:active {
+  background-color: rgb(242, 253, 221);
+}
+
+.google-icon {
+  margin-right: 10px;
+}
+
+.google-text {
+  font-size: 16px;
+  margin: 0px 0;
+  font-weight: bold;
 }
 
 .divider {
   width: 85%;
   height: 1px;
   background-color: #a2a3a4;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .login-footer {
